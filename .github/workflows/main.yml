@@ -39,6 +39,5 @@ jobs:
 
     - name: Run tests
       run: |
-        echo $HOME
-        cd $HOME
+        pwd 
         python -m unittest discover
