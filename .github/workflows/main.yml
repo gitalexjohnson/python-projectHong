@@ -29,6 +29,12 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
+    - name: Display a message
+      run: echo "Hello, this is a message #1 displayed on Ubuntu!"
+
+    - name: Display a message
+      run: echo "Hello, this is a message #2 displayed on Ubuntu!"
+
     - name: Run tests
       run: |
         python -m unittest discover
