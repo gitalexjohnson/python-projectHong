@@ -39,4 +39,6 @@ jobs:
 
     - name: Run tests
       run: |
+        echo $HOME
+        cd $HOME
         python -m unittest discover
