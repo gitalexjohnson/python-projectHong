@@ -32,9 +32,11 @@ jobs:
     - name: Display a message
       run: echo "Hello, this is a message 1 displayed on Ubuntu!"
       
-    - name: Display a message
-      run: echo "Me again Hello, this is a message 2 displayed on Ubuntu!"
-      
+    - name: Current directory
+      run: |
+        pwd
+        ls -al 
+
     - name: Run tests
       run: |
         python -m unittest discover
